@@ -1,7 +1,6 @@
 package com.example.soundboard20;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -90,19 +89,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void playSound(int soundResId) {
+    private void playSound(int soundId) {
         if (mediaPlayer != null) {
             mediaPlayer.release();
         }
-        mediaPlayer = MediaPlayer.create(this, soundResId);
+        mediaPlayer = MediaPlayer.create(this, soundId);
         mediaPlayer.start();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if (mediaPlayer != null) {
-            mediaPlayer.release();
-        }
+        mediaPlayer.release();
     }
 }
