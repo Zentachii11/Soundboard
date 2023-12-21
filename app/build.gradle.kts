@@ -8,8 +8,8 @@ android {
 
     defaultConfig {
         applicationId = "com.example.soundboard20"
-        minSdk = 34
-        targetSdk = 34
+        minSdk = 27
+        targetSdk = 27
         versionCode = 1
         versionName = "1.0"
 
