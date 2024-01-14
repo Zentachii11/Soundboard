@@ -9,14 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
 
         ImageView imageView1 = findViewById(R.id.imageView1);
         ImageView imageView2 = findViewById(R.id.imageView2);
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intent = new Intent(SecondActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -41,63 +41,63 @@ public class MainActivity extends AppCompatActivity {
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Sound(R.raw.sound1);
+                Sound(R.raw.sound10);
             }
         });
 
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Sound(R.raw.sound2);
+                Sound(R.raw.sound11);
             }
         });
 
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Sound(R.raw.sound3);
+                Sound(R.raw.sound12);
             }
         });
 
         imageView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Sound(R.raw.sound4);
+                Sound(R.raw.sound13);
             }
         });
 
         imageView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Sound(R.raw.sound5);
+                Sound(R.raw.sound14);
             }
         });
 
         imageView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Sound(R.raw.sound6);
+                Sound(R.raw.sound15);
             }
         });
 
         imageView7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Sound(R.raw.sound7);
+                Sound(R.raw.sound16);
             }
         });
 
         imageView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Sound(R.raw.sound8);
+                Sound(R.raw.sound17);
             }
         });
 
         imageView9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Sound(R.raw.sound9);
+                Sound(R.raw.sound18);
             }
         });
     }
